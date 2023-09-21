@@ -7,6 +7,7 @@ A simple weather app that allows users to check the current weather and forecast
 - Current weather information for a specific city or based on the user's current location.
 - Hourly and daily weather forecasts.
 - Today's weather highlights, including temperature, humidity, and wind speed.
+- Temperature unit conversion (Celsius, Fahrenheit).
 
  Getting Started
 
