@@ -1,10 +1,13 @@
 import React from "react";
 import getWeatherIcon from "../../utils/CustomIcons";
 import getCurrentDayName from "../../utils/WeekDays";
-import kelvinToCelsius from "../../utils/KelvinToCelsius";
 import { MdLocationOn } from "react-icons/md";
+import {
+  celsiusToFahrenheit,
+  kelvinToCelsius,
+} from "../../utils/TempConversion";
 
-function CurrentWeather({ weatherData, cityName }) {
+function CurrentWeather({ weatherData, cityName, temperatureUnit }) {
   const currentTime = new Date();
   const options = { hour: "numeric", minute: "numeric", hour12: true };
 
@@ -19,11 +22,18 @@ function CurrentWeather({ weatherData, cityName }) {
         />
       </div>
       <h1 className="text-[3.5rem] font-secondry leading-[3.5rem]">
-        {kelvinToCelsius(weatherData.current.temp)}
+        {temperatureUnit === "celsius"
+          ? `${kelvinToCelsius(weatherData.current.temp)}`
+          : `${celsiusToFahrenheit(kelvinToCelsius(weatherData.current.temp))}`}
         <span className="text-lg">°C</span>
       </h1>
       <p className="text-[14px] text-[#7F7F7F]">
-        Feels Like {kelvinToCelsius(weatherData.current.feels_like)}
+        Feels Like{" "}
+        {temperatureUnit === "celsius"
+          ? `${kelvinToCelsius(weatherData.current.feels_like)}`
+          : `${celsiusToFahrenheit(
+              kelvinToCelsius(weatherData.current.feels_like)
+            )}`}
       </p>
 
       <div className="capitalize mt-2">

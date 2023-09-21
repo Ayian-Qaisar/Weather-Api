@@ -12,9 +12,6 @@ import Card from "../Reuseable/Card";
 const TodayHighlight = ({ highlight }) => {
   return (
     <div>
-      <h2 className="text-white text-xl font-bold font-primary mb-5">
-        Today's Highlights
-      </h2>
       <div className="grid grid-cols-2 lg:grid-cols-3 gap-3">
         <Card
           icon={humidityIcon}

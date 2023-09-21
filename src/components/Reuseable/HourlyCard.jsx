@@ -28,7 +28,6 @@ const HourlyCard = ({
       ) : (
         <h4 className="text-[13px]">{temp}°</h4>
       )}
-      {/* <h4 className="text-[13px]">{temp}°</h4> */}
     </div>
   );
 };
