@@ -1,4 +1,4 @@
-Weather App
+## Weather App
 
 A simple weather app that allows users to check the current weather and forecasts for a specific city or based on their current location. This app is built using Vite for fast development and Tailwind CSS for styling. It utilizes the OpenWeatherMap API to fetch weather data.
 
@@ -51,7 +51,7 @@ Follow the steps below to get this project up and running on your local machine.
    npm run dev
 
 
-2. Open your web browser and access the app at [http://localhost:3000](http://localhost:3000).
+2. Open your web browser and access the app at [http://localhost:3000](http://localhost:5173).
 
 ### Usage
 
