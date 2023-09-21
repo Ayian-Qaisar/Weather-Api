@@ -51,7 +51,7 @@ Follow the steps below to get this project up and running on your local machine.
    npm run dev
 
 
-2. Open your web browser and access the app at [http://localhost:3000](http://localhost:5173).
+2. Open your web browser and access the app at http://localhost:5173/.
 
 ### Usage
 
