@@ -25,7 +25,7 @@ function CurrentWeather({ weatherData, cityName, temperatureUnit }) {
         {temperatureUnit === "celsius"
           ? `${kelvinToCelsius(weatherData.current.temp)}`
           : `${celsiusToFahrenheit(kelvinToCelsius(weatherData.current.temp))}`}
-        <span className="text-lg">°C</span>
+        <span className="text-lg">°</span>
       </h1>
       <p className="text-[14px] text-[#7F7F7F]">
         Feels Like{" "}
